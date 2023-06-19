@@ -17,7 +17,7 @@ const handleOnChange =(event)=>{
     //setText("new text");
   return (
    
-<><div>
+<><div className='container'>
     <h1>{props.heading} </h1>
 <div className="mb-3">
   
@@ -25,6 +25,11 @@ const handleOnChange =(event)=>{
 </div>
 <button className="btn btn-primary" onClick ={handleUpClick}>Convert to UpperCase</button>
 
-    </div> </>
+    </div> 
+    <div className="container my-4">
+      <h2>Your Text Summary</h2>
+      <p> {text.split(" ").length}words and {text.length}characters.     </p>
+    </div>
+    </>
   )
 }
